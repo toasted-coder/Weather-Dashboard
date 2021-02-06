@@ -13,3 +13,4 @@ https://toasted-coder.github.io/Weather-Dashboard/  - Live site URL<br>
 
 
 ## Screenshot
+![](Assets/working-screenshot.jpg)
