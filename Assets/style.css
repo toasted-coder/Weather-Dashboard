@@ -9,19 +9,12 @@ h1 {
     margin-bottom: 15px;
   }
 
-.header-style {
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-}
-
 .card {
     width:100%;
 }
 
 .fiveDay{    
-    background-color: royalblue;
-    margin: 15px;
+    margin: 20px;
 }
 
 h3 {

@@ -77,7 +77,7 @@ function getData() { // function for the current day info display
             method: "GET"
         }).then(function (response) { //function for displaying the 5day forecast
             for (i = 0; i < 5; i++) { 
-                var fiveDayCard = $("<div>").attr("class", "col fiveDay bg-info text-white rounded-lg p-3");
+                var fiveDayCard = $("<div>").attr("class", "col fiveDay bg-info text-black rounded-lg p-3");
                 $("#5DayForecast").append(fiveDayCard);
 
                 var fiveDayDates = new Date(response.list[i * 8].dt * 1000);
