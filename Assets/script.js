@@ -77,11 +77,11 @@ function getData() { // function for the current day info display
             method: "GET"
         }).then(function (response) { //function for displaying the 5day forecast
             for (i = 0; i < 5; i++) { 
-                var fiveDayCard = $("<div>").attr("class", "col fiveDay bg-info text-white rounded-lg p-2");
+                var fiveDayCard = $("<div>").attr("class", "col fiveDay bg-info text-white rounded-lg p-3");
                 $("#5DayForecast").append(fiveDayCard);
 
                 var fiveDayDates = new Date(response.list[i * 8].dt * 1000);
-                fiveDayCard.append($("<h4>").fiveDayDates.toLocaleDateString());
+                fiveDayCard.append($("<h4>").html(fiveDayDates.toLocaleDateString()));
 
                 // brings back the icon url suffix
                 var iconCode = response.list[i * 8].weather[0].icon;
@@ -120,7 +120,7 @@ $("#searchCity").click(function() {
         $(".list-group").append(cityListButton);
     };
 });
-// listens for action on the history buttons
+// history buttons event listener
 $(".list-group-item").click(function() {
     city = $(this).text();
     getData();
